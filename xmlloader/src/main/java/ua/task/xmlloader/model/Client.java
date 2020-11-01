@@ -1,5 +1,6 @@
 package ua.task.xmlloader.model;
 
+import lombok.EqualsAndHashCode;
 import ua.task.xmlloader.service.dto.ClientDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,11 +16,13 @@ import java.util.UUID;
 @Table(name = "client")
 public class Client {
     @Id
+    @EqualsAndHashCode.Exclude
     private UUID id;
     private String firstName;
     private String lastName;
     private String middleName;
     private String inn;
+    @EqualsAndHashCode.Exclude
     private UUID transactionId;
 
     public void fromDto(ClientDto clientDto, UUID transactionId) {

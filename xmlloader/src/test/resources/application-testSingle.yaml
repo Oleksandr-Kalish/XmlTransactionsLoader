@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   datasource:
-    url: jdbc:tc:postgresql://postgres
+    url: jdbc:tc:postgresql://single
     password: postgres
     username: postgres
     driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
@@ -15,4 +15,4 @@ spring:
         order_inserts: true
 
 application:
-  xml-path: "src\\test\\resources\\Java_test.xml"
+  xml-path: "src\\test\\resources\\single.xml"

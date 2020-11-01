@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns2:GetTransactionsResponse xmlns:ns2="http://dbo.qulix.com/ukrsibdbo">
+		  <transactions>
+		    <transaction>
+		      <place>p</place>
+		      <amount>0.01</amount>
+		      <currency>UAH</currency>
+		      <card>111111****1111</card>
+		      <client>
+			<firstName>fn</firstName>
+			<lastName>ln</lastName>
+			<middleName>mn</middleName>
+			<inn>1234567890</inn>
+		      </client>
+		    </transaction>
+		  </transactions>
+		</ns2:GetTransactionsResponse>
+	</soap:Body>
+</soap:Envelope>
