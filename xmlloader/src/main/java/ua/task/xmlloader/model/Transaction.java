@@ -1,5 +1,6 @@
 package ua.task.xmlloader.model;
 
+import lombok.EqualsAndHashCode;
 import ua.task.xmlloader.service.dto.TransactionDto;
 import lombok.Data;
 
@@ -10,6 +11,7 @@ import java.util.UUID;
 @Data
 public class Transaction {
     @Id
+    @EqualsAndHashCode.Exclude
     private UUID id;
     private String place;
     private double amount;
