@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url:
+    password:
+    username:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 50000
+        order_inserts: true
+application:
+  #path to xml file with data
+  xml-path:

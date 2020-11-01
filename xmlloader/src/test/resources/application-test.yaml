@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:tc:postgresql://postgres
+    password: postgres
+    username: postgres
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+        jdbc:
+          batch_size: 6
+        order_inserts: true
+
+application:
+  xml-path: "C:\\Soft\\git\\xmlloader\\src\\test\\resources\\Java_test.xml"
